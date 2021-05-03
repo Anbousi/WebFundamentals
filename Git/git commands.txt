@@ -1,0 +1,22 @@
+mkdir test
+
+touch index.html
+
+touch styles.css
+
+git add .
+
+git commit -m "test"
+
+git push origin master 
+
+
+git add .
+
+git commit -m "update"
+
+git log
+
+git revert master
+
+git commit -m "re"

@@ -1,0 +1,12 @@
+
+    *{
+        padding: 5px;
+        margin: 5px;
+    }
+    p{
+        width: 50%;
+    }
+    img {
+        width: 30%;
+        height: auto;
+    }

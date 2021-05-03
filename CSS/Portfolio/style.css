@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main-box{
+    width: 980px;
+    margin: 0  auto;
+}
+
+.all-content{
+    background-image: radial-gradient(#6f5964,#1d0d11);
+    min-height: 800px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+
+header h1{
+margin-left: 15px;
+}
+
+header h2{
+    margin-right: 15px;
+    }
+
+.top img{
+    height: 300px;
+    border: 5px solid #c0c0c0 ;
+    box-sizing: border-box;
+}
+
+.top .about{
+    width: 470px;
+    height: 300px ;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    box-sizing: border-box;
+    
+}
+.about{
+    background-image: linear-gradient(to right,#ffffff,#dbccda);
+}
+
+.title{
+    color: white;
+    background-image: radial-gradient(#878593,#aeadb2);
+    padding: 10px 10px 10px 15px;
+    
+}
+
+.article{
+    padding: 15px;
+    text-align: center;
+
+    
+}
+.paragraph{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+
+.col{
+    flex:1;
+    max-width: 300px;
+}
+
+
+.pics{
+    width: 220px;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+/* .tech{
+    margin: 0 auto;
+} */
+
+.tech-img{
+    display: flex;
+    justify-content: left;
+    flex-flow: wrap;
+}
+
+.tech-img img{
+    max-width: 40px;
+    flex:1;
+    padding: 5px;
+}
+
+.botton{
+    margin: 20px;
+    
+}
+.botton a{
+    padding: 7px 10px;
+    margin: 10px;
+    background-color: #407d61;
+    width: 60px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.651);
+}
+
+
+footer{
+
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+
+.email{
+    text-align: center;
+    
+}
+
+.email p{
+    font-weight: 100;
+}
+
+.contacts ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    list-style-type: none;
+}
+.contacts li{
+margin: 0px 6px 0px 6px;
+}
+.contacts img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.contacts a{
+    vertical-align: top;
+    color: black;
+}
+
+.a-tag {
+    padding-left: 15px;
+    color: brown;
+}

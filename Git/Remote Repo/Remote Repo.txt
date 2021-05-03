@@ -1,0 +1,21 @@
+$ git inti
+
+$ git config --global user.name "Mahmoud Anbousi"
+
+$ git config --global user.email "anbousi@gmail.com"
+
+$ git remote add origin .........
+
+$ mkdir gittest
+
+$ git add .
+
+$ git commit -m "try to add some files"
+
+$ git push origin master 
+
+$ git add . 
+
+$ git commit -m "modfiy"
+
+$ git push origin master 

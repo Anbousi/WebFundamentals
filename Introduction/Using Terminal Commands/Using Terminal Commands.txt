@@ -1,0 +1,35 @@
+cd
+copy
+move
+type
+..
+../..
+del
+mkdir
+rmdir
+cd > ... .txt
+dir
+--------------------------
+cd Desktop
+---------------------------
+mkdir test
+---------------------------
+cd test
+
+cd > index.html
+cd > styles.css
+cd > commands.txt
+---------------------------
+copy index.html index_2.html
+---------------------------
+..
+mkdir destination
+---------------------------
+cd test
+move index_2 C:\Users\Anbousi\Desktop\destination
+---------------------------
+cd test
+del styles.css
+---------------------------
+..
+rmdir /s destination

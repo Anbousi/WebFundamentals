@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .container{
+            margin: 50px auto 0 auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $('img').hover(function(){
+                $(this).attr('src' , $(this).attr('data-alt-src'));
+            },function(){
+                $(this).attr('src' , $(this).attr('alt'));
+            })
+
+            });
+        
+
+    </script>
+
+</head>
+<body>
+        <div class="container">
+            <img src="img/R1R.png" style="width:150px" data-alt-src="img/R1R.png" alt="img/R1L.png">
+            <img src="img/O1R.png" style="width:150px" data-alt-src="img/O1R.png" alt="img/O1L.png">
+            <img src="img/B1R.png" style="width:150px" data-alt-src="img/B1R.png" alt="img/B1L.png">
+            <img src="img/G1R.png" style="width:150px" data-alt-src="img/G1R.png" alt="img/G1L.png">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+.newClass{
+    font-size: larger;
+    background-color: orange;
+}
+
+.newClass1{
+    font-weight: bolder;
+    color: white;
+}
+
+.newClass2{
+    font-weight: bolder;
+    color: white;
+    background-color: lightblue;
+    margin-top: 30px;
+    text-align: center;
+}
+
+p{
+    font-weight: bolder;
+}
+
+img {
+    margin: 10px;
+    width: 300px;
+}
+
+.pics{
+    min-height: 470px;
+}

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-box{
+    background-color: #EEEEEE;
+    margin: 0 auto;
+    padding: 20px;
+    width: 1150px
+}
+
+.blue{
+    background-color: #689BFF;
+    border: 1px solid black;
+}
+
+.yellow{
+    background-color: #FECB00;
+    border: 1px solid black;
+}
+
+.red{
+    background-color: #FD9A98;
+    border: 1px solid black;
+}
+
+.green{
+    background-color: #1FCA21;
+    border: 1px solid black;
+}
+
+.table-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.between label{
+    margin-top: 40px;
+    display: inline-block;
+    color: red;
+}
+
+.between .L{
+    margin-left: 40px;
+}
+
+.element{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.periodic{
+    display: flex;
+}
+
+.element p{
+    font-size: 0.8rem ;
+}
+
+.element h4{
+    color: rgb(0, 0, 199);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.number{
+    justify-content: start;
+    padding-top: 15px;
+    color: red;
+    box-sizing: border-box;
+}
+.number p{
+    font-size: 18px;
+}
+
+.blue-boxes{
+    align-items: flex-start;
+    display: flex;
+    margin-right: 10px;
+}
+
+.eight{
+    margin-top: 20px;
+}

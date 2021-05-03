@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        button {
+            width: 100px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $(".1").hide();
+            });
+
+            $('#show').click(function(){
+                $('.1').show();
+            });
+
+            $('#toggle').click(function(){
+                $('.1').toggle();
+            });
+
+            $('#slideup').click(function(){
+                $('h1.2').slideUp();
+            });
+
+            $('#slidedown').click(function(){
+                $('h1.2').slideDown();
+            })
+
+            $('#slidetoggle').click(function(){
+                $('h1.2').slideToggle();
+            })
+
+            $('#fadein').click(function(){
+                $('img').fadeIn();
+            });
+
+            $('#fadeout').click(function(){
+                $('img').fadeOut();
+            });
+
+            $('#attr').click(function(){
+                    $('#mahmoud').attr('width', '100px');
+                });
+
+
+            $('p').click(function(){
+                $(this).addClass('newClass');
+            }); 
+
+            $('h1.1').click(function(){
+                $(this).addClass('newClass1');
+            }); 
+
+            $('#add').click(function(){
+                $('h1.1').addClass('newClass1');
+            }); 
+
+            $('#add1').click(function(){
+                $('h1.2').addClass('newClass2');
+            }); 
+
+            $('#before').click(function(){
+                $('.3').before('<p>Before</p>');
+            })
+
+            $('#after').click(function(){
+                $('.3').after('<p>After</p>');
+            })
+
+            $(document).on('click','p',function(){
+                $(this).css('color','white' );
+                $(this).css('background-color' , 'black');
+                $(this).css('font-weight' , 'bold');
+                $(this).css('text-align' , 'center');
+            })
+
+            $('#append').click(function(){
+                $('.4').append('append');
+            });
+
+            $('#html').click(function(){
+                $('.4').html('<h3>HTML is changed to h3 instead of p</h3>');
+            });
+
+            $('#val').click(function(){
+                $('#name').val('Mahmoud');
+            });
+            
+            $('#text').click(function(){
+                $('.4').text('Text is changed');
+            });
+
+        });
+    </script>
+
+</head>
+    <body>
+
+        <div class="container m-5">
+                
+                <div class="row bg-success">
+                    <div class="col">
+                        <div class="row">
+                            <button type="button" class="btn btn-primary m-4 bg-warning" id='hide'>Hide</button>
+                            <button type="button" class="btn btn-primary m-4 bg-warning" id='show'>Show</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-primary m-4 bg-warning" id='toggle'>Toggle</button>
+                            <button type="button" class="btn btn-primary m-4 bg-warning" id='add'>Add Class</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h1 class="1">Mahmoud Anbousi</h1>
+                        <p class="1">Coding Dojo Bootcamp</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col">
+                        <div class="row ">
+                            <button type="button" class="btn btn-primary m-4" id='slideup'>Slide Up</button>
+                            <button type="button" class="btn btn-primary m-4" id='slidedown'>Slide Down</button>
+                        </div>
+                        <div class="row ">
+                            <button type="button" class="btn btn-primary m-4" id='slidetoggle'>Slide Toggle</button>
+                            <button type="button" class="btn btn-primary m-4" id='add1'>Add Class</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h1 class="2">Mahmoud Anbousi</h1>
+                        <p class="2">Coding Dojo Bootcamp</p>
+                    </div>
+                </div> 
+                <div class="row bg-dark pics"> 
+                    <div class="col align-self-center">
+                        <div class="row ">
+                            <button type="button" class="btn btn-primary m-4" id='fadein'>FadeIin</button>
+                            <button type="button" class="btn btn-primary m-4" id='fadeout'>Fade Out</button>
+                        </div>
+                        <div class="row ">
+                            <button type="button" class="btn btn-primary m-4"  id='attr'>img attr</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="mahmoud.png" id="mahmoud" alt="mah">
+                    </div>
+                </div>
+                <div class="row bg-secondary"> 
+                    <div class="col">
+                        <button type="button" class="btn btn-primary m-4 bg-dark" id='before'>before</button>
+                        <button type="button" class="btn btn-primary m-4 bg-dark" id='after'>after</button>
+                    </div>
+                    <div class="col">
+                        <h2 class="3">Adding text top/bottom</h2>
+                    </div>
+
+                </div>
+                <div class="row "> 
+                    <div class="col">
+                        <button type="button" class="btn btn-primary m-4" id='append'>append</button>
+                    </div>
+                    <div class="col">
+                        <h3 class="4">Adding text right</h3>
+                    </div>
+                </div>
+                <div class="row "> 
+                    <button type="button" class="btn btn-primary m-4" id='html'>HTML</button>
+                    <button type="button" class="btn btn-primary m-4"  id='text'>Text</button>
+                </div>
+                <div class="row ">
+                    <button type="button" class="btn btn-primary m-4"  id='val'>Name Val</button>
+                    <input type="text" id="name" name="user" placeholder="Enter Text">
+                </div>  
+        </div>
+    </body>
+</html>

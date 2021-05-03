@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.green{
+    min-height: 90px;
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+    height: 300px;
+}
+
+.red{
+    background-color: red;
+    min-height: 500px;
+   
+}
+
+.col{
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.row{
+    
+}
+
+

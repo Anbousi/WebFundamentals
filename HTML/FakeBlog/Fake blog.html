@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.">
+    <title>Photography</title>
+    <link rel="stylesheet" type="text\css" href="style.css">
+</head>
+<body>
+    <div>
+
+        <h1>Photography</h1>
+        <img src="camera.jpg" alt="Camera picture">
+        <p>Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.</p>
+        <p>Typically, a lens is used to focus the light reflected or emitted from objects into a real image on the light-sensitive surface inside a camera during a timed exposure. With an electronic image sensor, this produces an electrical charge at each pixel, which is electronically processed and stored in a digital image file for subsequent display or processing. The result with photographic emulsion is an invisible latent image, which is later chemically "developed" into a visible image, either negative or positive depending on the purpose of the photographic material and the method of processing. A negative image on film is traditionally used to photographically create a positive image on a paper base, known as a print, either by using an enlarger or by contact printing. </p>
+    </div>
+    <h2>World-wide Camera Companies</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Foundation Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Canon</td>
+                <td>1934</td>
+            </tr>
+            <tr>
+                <td>Sony</td>
+                <td>1946</td>
+            </tr>
+            <tr>
+                <td>Nikon</td>
+                <td>1917</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Camear Types</h2>
+    <ul>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Digital_single-lens_reflex_camera">DSLR Cameras.</a>
+        </li>   
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Mirrorless_interchangeable-lens_camera">Mirrorless Cameras.</a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Bridge_camera">Bridge Cameras</a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Point-and-shoot_camera">Compact Cameras.</a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Movie_camera">Film Cameras.</a>
+        </li>
+    </ul>
+
+    <h3>Lenses Types</h3>
+
+    <ol>
+        <li>Wide angle</li>
+        <li>Standard</li>
+        <li>Short telephoto</li>
+        <li>Medium telephoto</li>
+    </ol>
+
+    <form action="process.php" method="POST">
+        <p>Register to our news about photography</p>
+
+        <label for="want">Do you want to recieve a news by email?</label>
+        <select id="want" name="want">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <table>
+            <tr>
+                <td><label for="first_name">First Name</label></td>
+                <td><input type="text" id="first_name" name="First Name"></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">Last Name:</label></td>
+                <td><input type="text" id="last_name" name="last_name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td> <input type="email" id="email" name="email"></td>
+            </tr>
+        </table>
+        
+        <p>Do you have a camera?</p>
+        <input type="radio" id="Own" name="Own" value="Yes">
+        <label for="Own">Yes</label>
+        <input type="radio" id="not" name="Own" value="No">
+        <label for="not">No</label>
+
+        <p>Which type of camera do you have?</p>
+        <input type="checkbox" name="type" id="Canon" value="Canon">
+        <label for="Canon">Canon</label><br>
+        <input type="checkbox" name="type" id="Sony" value="Sony">
+        <label for="Sony">Sony</label><br>
+        <input type="checkbox" name="type" id="Nikon" value="Nikon">
+        <label for="Sony">Nikon</label><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
